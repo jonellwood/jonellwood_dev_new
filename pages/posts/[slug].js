@@ -69,6 +69,6 @@ export async function getStaticPaths() {
           slug: post.slug,
         },
       })) || [],
-    fallback: true,
+    fallback: false,
   }
 }
