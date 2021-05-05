@@ -36,7 +36,10 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'main-pattern': "url('../public/pageturner.svg')",
-      })
+      }),
+      purge: {
+        enabled: false,
+      }
     },
   },
 }
