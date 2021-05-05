@@ -37,7 +37,15 @@ module.exports = {
       backgroundImage: theme => ({
         'main-pattern': "url('../public/pageturner.svg')",
       }),
-      purge: false,
+      purge: [
+        './src/**/*.html',
+        './src/**/*.vue',
+        './src/**/*.jsx',
+        ],
+        theme: {},
+        variants: {},
+        plugins: [],
+    }
     },
   },
 }
