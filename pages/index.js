@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
+import AboutMe from '../components/aboutMe'
 
 export default function Index({ allPosts, preview }) {
   const heroPost = allPosts[0]
@@ -18,7 +19,8 @@ export default function Index({ allPosts, preview }) {
         </Head>
         <Container>
           <Intro />
-          {heroPost && (
+          <AboutMe />
+          {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
               coverImage={heroPost.coverImage}
@@ -27,7 +29,7 @@ export default function Index({ allPosts, preview }) {
               slug={heroPost.slug}
               excerpt={heroPost.excerpt}
             />
-          )}
+          )} */}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>

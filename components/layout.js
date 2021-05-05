@@ -6,7 +6,7 @@ export default function Layout({ preview, children }) {
   return (
     <>
       <Meta />
-      <div className="min-h-screen">
+      <div className="min-h-screen font-mono bg-gradient-to-r from-green-200 to-blue-200 bg-main-pattern bg-cover bg-opacity-50">
         <Alert preview={preview} />
         <main>{children}</main>
       </div>
