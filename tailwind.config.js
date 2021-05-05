@@ -25,6 +25,11 @@ module.exports = {
         '7xl': '4.5rem',
         '8xl': '6.25rem',
       },
+      purge: [
+        './src/**/*.html',
+        './src/**/*.vue',
+        './src/**/*.jsx',
+      ],
       maxWidth: {
         '1/4': '25%',
         '1/2': '50%',
@@ -37,15 +42,6 @@ module.exports = {
       backgroundImage: theme => ({
         'main-pattern': "url('../public/pageturner.svg')",
       }),
-      purge: [
-        './src/**/*.html',
-        './src/**/*.vue',
-        './src/**/*.jsx',
-        ],
-        theme: {},
-        variants: {},
-        plugins: [],
-    }
     },
   },
 }
