@@ -40,7 +40,8 @@ module.exports = {
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },
       backgroundImage: theme => ({
-        'main-pattern': "url('../public/pageturner.svg')",
+        'main-pattern': "url('../public/turner.svg')",
+        'alt-pattern': "url('../public/liquidCheese.svg')",
       }),
     },
   },
